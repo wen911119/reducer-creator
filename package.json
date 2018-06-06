@@ -1,0 +1,31 @@
+{
+  "name": "reducer-creator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack index.js -o dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wen911119/reducer-creator.git"
+  },
+  "keywords": [
+    "redux",
+    "reducer"
+  ],
+  "author": "wen911119@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wen911119/reducer-creator/issues"
+  },
+  "homepage": "https://github.com/wen911119/reducer-creator#readme",
+  "dependencies": {
+    "object-mutation": "^1.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.2"
+  }
+}
