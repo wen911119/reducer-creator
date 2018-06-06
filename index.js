@@ -5,7 +5,7 @@ function reducerCreater(initState) {
     return function(state = initState, action = {}) {
       const { type, payload } = action
       if (handlers[type]) {
-        let newState = { ...state }
+        let newState = Object.assign({}, state)
         handlers[type]({
           payload,
           stateSetter: mutation(newState),
