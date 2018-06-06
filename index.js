@@ -1,8 +1,8 @@
-import mutation from 'object-mutation'
-export default function reducerCreater (initState) {
+const mutation = require('object-mutation')
+function reducerCreater(initState) {
   let histories = []
-  return function (handlers) {
-    return function (state = initState, action = {}) {
+  return function(handlers) {
+    return function(state = initState, action = {}) {
       const { type, payload } = action
       if (handlers[type]) {
         let newState = { ...state }
@@ -30,3 +30,4 @@ export default function reducerCreater (initState) {
     }
   }
 }
+module.exports = reducerCreater
